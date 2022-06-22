@@ -1,0 +1,295 @@
+/* base rules */
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Caveat", sans-serif;
+  color: aliceblue;
+}
+
+p {
+  font-family: "Special Elite", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: aliceblue
+}
+
+body {
+  background-color: black;
+  position: relative;;
+}
+
+::selection {
+  background-color: #ee8683;
+  color: #fff;
+  /* text-shadow: 4px 2px 2px #FFFD3A; */
+}
+
+/* Navigation bar*/
+nav .a-nav {
+  background: transparent;
+  padding: 20px 0;
+  transition: .5s all;
+}
+
+nav .navbar-brand {
+  font-size: 40px;
+  margin-left: 85px;
+  color: rgba(14, 231, 246, 0.856);
+  font-family: "Caveat", sans-serif;
+}
+
+nav .navbar-nav li a {
+  color: whitesmoke !important;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 330;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+}
+
+nav .navbar-nav li {
+  margin-left: 15px;
+}
+
+nav.a-nav.stickyadd {
+  background: black !important;
+  padding: 15px 0;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+  transition: .5s all ease-in-out;
+
+}
+
+.navbar .hamburger {
+  color: aliceblue;
+}
+
+.navbar.stickyadd .hamburger {
+  color: rgb(255, 255, 255);
+}
+
+nav.stickyadd .navbar-nav .nav-link {
+  color: rgb(208, 229, 244) !important;
+}
+
+nav *,
+header * {
+  animation-delay: 0.5s;
+}
+
+.dropdown #dropdownMenuButton{
+  background-color: transparent !important;
+  border: none !important;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+font-size: 20px;
+font-weight: 330;
+}
+
+.dropdown .dropdown-item{
+  background-color: #333333;
+  color: #dcd9d9;
+}
+
+/* Header Section */
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/backg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.header-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box {
+  max-width: 700px;
+  color: aliceblue;
+}
+
+.content-box h4 {
+  font-size: 40px;
+}
+
+.content-box h1 {
+  font-size: 52px;
+}
+
+.content-box a {
+  color: aliceblue;
+  text-decoration: none;
+  border: 2px solid aliceblue;
+  border-radius: 20px;
+  padding: 5px 25px;
+}
+
+.content-box a:hover {
+  color: #000;
+  background-color: aliceblue;
+
+}
+
+.content-box p {
+  color: rgba(14, 231, 246, 0.856);
+}
+
+/* About */
+.a-p {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.about {
+  background-image: url(../images/aboutback.png);
+}
+
+.about img {
+  height: 70%;
+  margin: 30px;
+  border-radius: 50%;
+}
+
+.about h2 {
+  font-size: 52px;
+  color: rgba(14, 231, 246, 0.856);
+}
+
+.about li a {
+  color: aliceblue;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  border: 2px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+
+.about li a:hover {
+  color: rgba(14, 231, 246, 0.856);
+
+}
+
+/* Skills */
+
+.a-s {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.skills-class h2 {
+  font-size: 50px;
+  color: rgba(14, 231, 246, 0.856);
+
+}
+
+.skills-class .card h5 {
+  color: #000;
+  font-size: 40px;
+}
+
+.skills-class .card p {
+  color: #000;
+}
+
+.card,
+.card-header {
+  background: #F8F9FA !important;
+
+}
+
+.card-header {
+  border: none !important;
+}
+
+.skills-class .card-header i {
+  font-size: 50px;
+}
+
+.service-border {
+  height: 2px;
+  width: 40px;
+  margin: 15px auto;
+  background: rgba(14, 231, 246, 0.856);
+
+}
+/* projects */
+.projects .card h5 {
+  color: #000;
+  font-size: 40px;
+}
+.projects h2{
+  text-align: center;
+    font-size: 40px;
+    color: rgba(14, 231, 246, 0.856);
+}
+.projects p{
+  color: #000;
+}
+/* Certificates */
+.certificates h2{
+  text-align: center;
+  font-size: 40px;
+  color: rgba(14, 231, 246, 0.856);
+}
+
+/* Contact */
+.contact h2 {
+  color: rgba(14, 231, 246, 0.856);
+  font-size: 50px;
+}
+
+.contact .a-icon {
+  color: #F8F9FA;
+  font-size: 50px;
+  text-align: center;
+}
+
+.contact h5 {
+  font-size: 40px;
+}
+
+.contact .submit-butn {
+  color: #eee;
+  background-color: #333333;
+}
+
+/* Footer */
+footer {
+  height: 150px;
+  background-color: #333333;
+}
+
+footer .a-icon a {
+  font-size: 20px;
+  color: #8d8a8a;
+  padding: 10px;
+  border: 1px solid #848484;
+  border-radius: 50%;
+}
+
+footer .a-icon a:hover {
+  border: 1px solid #eee;
+  color: #eee;
+  transition: .5s all;
+}
+
+footer .col p {
+  color: #dcd9d9 !important;
+}
